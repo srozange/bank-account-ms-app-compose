@@ -2,8 +2,6 @@ package net.youssfi.customerservice.config;
 
 import io.opentelemetry.api.OpenTelemetry;
 import io.opentelemetry.instrumentation.jdbc.datasource.JdbcTelemetry;
-import jakarta.inject.Inject;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

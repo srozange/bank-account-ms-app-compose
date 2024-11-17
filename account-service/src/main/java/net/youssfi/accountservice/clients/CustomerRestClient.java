@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name = "CUSTOMER-SERVICE")
+@FeignClient(name = "customerService")
 public interface CustomerRestClient {
     @GetMapping("/customers/{id}")
     @CircuitBreaker(name = "customerService", fallbackMethod = "getDefaultCustomer")
